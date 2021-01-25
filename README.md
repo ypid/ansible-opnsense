@@ -4,6 +4,8 @@
 
 # ansible-opnsense
 
+This role is ypid’s fork of https://github.com/Rosa-Luxemburgstiftung-Berlin/ansible-opnsense. ypid intends to continue to rebase this fork to pull in fixes and enhancements from "upstream". The main difference of this fork is a xml_template feature that cannot be upstreamed currently. See https://github.com/Rosa-Luxemburgstiftung-Berlin/ansible-opnsense/pull/61 for details.
+
 Ansible role to configure [OPNsense](https://opnsense.org/) firewalls.
 
 This is the [RLS](https://github.com/Rosa-Luxemburgstiftung-Berlin) detached fork of the original from https://github.com/naturalis/ansible-opnsense.
@@ -73,11 +75,11 @@ We try to provide some example variable definitions in the corresponding task an
 
 ## Dependencies
 
-    sudo apt install python3-lxml
+    sudo apt install python3-lxml python3-defusedxml
 
 or
 
-    pip install lxml
+    pip install lxml defusedxml
 
 
 ### optional
@@ -138,4 +140,4 @@ Apache 2.0
   * Klaus Zerwes - https://github.com/zerwes
   * Jonybat - https://github.com/Jonybat
   * fnateghi - https://github.com/fnateghi
-
+  * Robin Schneider - https://me.ypid.de/
